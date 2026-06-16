@@ -1,0 +1,12 @@
+# Reproduce the analysis end-to-end:  pip install -r requirements.txt
+# Then:  python src/build_report.py   (regenerates every figure + the processed CSV)
+# Or:    jupyter nbconvert --to notebook --execute --inplace notebooks/01_analysis.ipynb
+pandas==3.0.1
+numpy==2.4.0
+matplotlib==3.11.0
+openpyxl==3.1.5         # read the Excel copy of the dump (Tableau-friendly source)
+
+# notebook execution (optional — only needed to run 01_analysis.ipynb)
+nbconvert==7.17.1
+nbclient==0.11.0
+ipykernel==7.3.0
